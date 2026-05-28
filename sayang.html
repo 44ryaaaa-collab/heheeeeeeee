@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Untuk Sayangku 💕</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Floating background hearts -->
+<div class="bg-hearts" id="bgHearts"></div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal">
+  <div class="modal-box">
+    <span class="m-icon" id="modalIcon">💖</span>
+    <h3 id="modalTitle">Yeay!</h3>
+    <p id="modalText">Kamu luar biasa!</p>
+    <button class="modal-close" onclick="closeModal()">Makasih Sayang 💕</button>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <span class="badge">✨ SPESIAL UNTUKMU ✨</span>
+    <h1>Halo Sayang!</h1>
+    <p>Kamu adalah alasan aku tersenyum tiap hari 🌸</p>
+  </div>
+
+  <!-- Big Heart Counter -->
+  <div class="heart-btn" id="heartBtn" onclick="tapHeart(event)">
+    <span class="h-icon" id="heartIcon">🩷</span>
+    <span class="tap-hint">Ketuk aku!</span>
+  </div>
+
+  <!-- Counter -->
+  <div class="counter-card">
+    <div class="label">TOTAL CINTAKU UNTUKMU</div>
+    <div class="number" id="counter">0</div>
+    <div class="sub">kali ketukan penuh sayang 💗</div>
+  </div>
+
+  <!-- Random Love Message -->
+  <div class="msg-box">
+    <div class="msg-title">💌 Pesan Dari Hati</div>
+    <div class="msg-text" id="msgText">Ketuk tombol di bawah untuk mendapat pesan spesial dariku...</div>
+    <button class="msg-btn" onclick="showMessage()">Minta Pesan Sayang ✨</button>
+  </div>
+
+  <!-- Reasons I Love You -->
+  <div class="reasons">
+    <h2>💖 Kenapa Aku Suka Kamu</h2>
+    <div class="reason-grid" id="reasonGrid">
+      <div class="reason-item" onclick="toggleReason(this)"><span class="ri-icon">😊</span>Senyummu bikin hari jadi indah</div>
+      <div class="reason-item" onclick="toggleReason(this)"><span class="ri-icon">🌟</span>Kamu selalu bikin aku ketawa</div>
+      <div class="reason-item" onclick="toggleReason(this)"><span class="ri-icon">🤗</span>Pelukanmu paling hangat</div>
+      <div class="reason-item" onclick="toggleReason(this)"><span class="ri-icon">💬</span>Ceritamu selalu seru</div>
+      <div class="reason-item" onclick="toggleReason(this)"><span class="ri-icon">🍀</span>Kamu bikin hidupku lengkap</div>
+      <div class="reason-item" onclick="toggleReason(this)"><span class="ri-icon">✨</span>Matamu bersinar indah</div>
+    </div>
+  </div>
+
+  <!-- Love Meter -->
+  <div class="meter-card">
+    <h2>💝 Love Meter</h2>
+    <div class="meter-bar-wrap">
+      <div class="meter-bar" id="meterBar"></div>
+    </div>
+    <div class="meter-label" id="meterLabel">0%</div>
+    <button class="meter-btn" onclick="chargeMeter()">Charge Cinta! 💗</button>
+  </div>
+
+  <div class="footer">Made with 💕 just for you</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
